@@ -1,0 +1,17 @@
+.shop{
+    background: linear-gradient(rgba(217, 178, 255, 1), rgba(237, 237, 237, 1));
+    padding: 6%;
+}
+.shop-large{
+    background-color: rgba(36, 90, 229, 1);
+    color: white;
+    text-transform: uppercase;
+    width: 15rem;
+    height: 3rem;
+}
+.shop-large:hover{
+    background-color: white;
+    color:rgba(36, 90, 229, 1);
+    border: 1px solid rgba(36, 90, 229, 1);
+    font-weight: bolder;
+}

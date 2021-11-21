@@ -1,0 +1,25 @@
+.story-header{
+    font-size: 45px;
+}
+.story-text{
+    text-align: justify;
+    font-size: 24px;
+    width: 50%;
+}
+.story{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+@media only screen and (max-width: 600px) {
+    .story-text{
+        width: 100%;
+    }
+ 
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .story-text{
+        width: 100%;
+    }
+ 
+   
+}

@@ -1,0 +1,32 @@
+.footer{
+    background-color: black;
+    color: white;
+}
+.terms-mt{
+    margin-top: 9%;
+}
+.ms{
+    margin-left: 50%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.brand-logo{
+    position: relative;
+    display: inline-block;
+}
+.brand-logo small{
+    position: absolute;
+}
+@media only screen and (max-width: 600px) {
+    .ms{
+        margin-left: 0;
+    }
+ 
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+   .ms{
+       margin-left: 0;
+   }
+
+}
