@@ -44,7 +44,7 @@ const Header = () => {
           <i className='cart' value='2'><AiOutlineShopping></AiOutlineShopping></i>
       </Nav.Link>
       <Nav.Link href="" className=''>
-      <button className=' shop-btn'>Shop Now</button>
+      <button className={navbar ? "shop-btn-active" : "shop-btn"}>Shop Now</button>
       </Nav.Link> 
     </Nav>
   </Navbar.Collapse>
