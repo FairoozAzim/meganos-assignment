@@ -1,5 +1,6 @@
 .story-header{
     font-size: 45px;
+    text-transform: uppercase;
 }
 .story-text{
     text-align: justify;

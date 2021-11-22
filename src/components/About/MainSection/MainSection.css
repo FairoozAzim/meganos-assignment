@@ -49,10 +49,40 @@
     background-color: rgba(223, 255, 97, 1);
     text-transform: uppercase;
     padding: 2%;
-    height: 200px;
+    height: 300px;
     text-align: center;
+    font-weight: 600;
+    font-family: 'obviously';
+    word-spacing: 0.5rem;
 }
 
+/* ===========wavy text========== */
+.motion span {
+    position: relative;
+    display: inline-block;
+    transition-delay: 2s;
+    animation-name: wavy;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: calc(0.05s * var(--index));
+    margin-bottom: 6px;
+  }
+  @keyframes wavy {
+    0% {
+      transform: translateX(0px);
+    }
+    20% {
+        transform: translateX(-15px);
+    }
+    40%,100% {
+        transform: translateX(10px);
+    }
+  }
+
+
+
+/* ==========responsive queries============= */
 @media only screen and (max-width: 600px) {
     .info-div{
         width: 100%;
@@ -72,6 +102,8 @@
     }
 
 }
+
+/* Small devices (mobile phone, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .info-div{
         width: 100%;
@@ -92,7 +124,6 @@
 
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .info-div{
@@ -111,12 +142,10 @@
         width: 100%;
         margin-right: 10px;     
     }
-
-   
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) and (max-width:1200px) {
+/* ipad-pro */
+ @media only screen and (min-width: 1024px) and (max-width:120px) {
     .info-div{
         width: 40%;
         background: linear-gradient(rgba(236, 216, 255, 1), rgba(255, 255, 255, 1) );

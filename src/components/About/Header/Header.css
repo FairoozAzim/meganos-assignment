@@ -23,9 +23,28 @@ nav{
     color: white !important;
     margin-top: 10px;
     font-weight: bolder;
+    margin-right: 10px;
+    transition: all .5s;
+}
+.navbar-toggler{
+    color: white !important;
+    border-color: white !important;
+    align-items: center !important;
 }
 .active-link{
     border-bottom: 5px solid rgba(217, 178, 255, 1);
+}
+.icon{
+    font-size: 25px;
+    transition: all 0.5s;
+
+}
+.icon:hover{
+    transform: scale(1.5);
+}
+.link:hover{
+    border-bottom: 5px solid rgba(217, 178, 255, 1);
+    border-top: 5px solid rgba(217, 178, 255, 1);
 }
 .active{
     background-color: rgba(0, 0, 0, 0.5);
@@ -49,4 +68,62 @@ nav{
     background-color: black;
     border: 2px solid rgba(36, 90, 229, 1);
     
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-link{
+        color: white !important;
+        margin-top: 10px;
+        margin-right:0px;
+        text-align: center;
+        transition: all .5s;
+    }
+    .cart{
+        margin-left: 12%;
+    }
+    .active-link{
+        border: 5px solid rgba(217, 178, 255, 1);
+
+    }
+   
+
+}
+
+/* Small devices (mobile phone, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .nav-link{
+        color: white !important;
+        margin-top: 10px;
+        margin-right:0px;
+        text-align: center;
+        transition: all .5s;
+    }
+    .cart{
+        margin-left: 12%;
+    }
+    .active-link{
+        border: 5px solid rgba(217, 178, 255, 1);
+
+    }
+   
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-link{
+        color: white !important;
+        margin-top: 10px;
+        margin-right:0px;
+        text-align: center;
+        transition: all .5s;
+    }
+    .cart{
+        margin-left: 10%;
+    }
+    .active-link{
+        border: 5px solid rgba(217, 178, 255, 1);
+
+    }
+   
 }
